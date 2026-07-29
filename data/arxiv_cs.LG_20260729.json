@@ -1,0 +1,623 @@
+[
+  {
+    "title": "$\u03c0\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "summary": "Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input arriving mid-execution, sacrificing \\emph{reactivity}. Replanning more often would restore it, but the perception-to-action pipeline (a large backbone plus multiple denoising steps) is too slow: this \\emph{latency} forbids frequent replanning and leaves committed actions stale, making such policies",
+    "authors": [
+      "Sungjae Park",
+      "Shubham Tulsiani"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+    "summary": "Mixture-of-Experts (MoE) variants of Low-Rank Adaptation (LoRA) route every token to a fixed number of experts $k$. Tokens differ in how uncertain the model is about them, so a single k over-spends on easy tokens and under-serves hard ones. We observe that the router's output distribution is already a per-token uncertainty signal: peaked mass indicates confidence, while a flat distribution indicates ambiguity. We introduce CARE (Confidence-Adaptive Routing of Experts), which admits experts in a",
+    "authors": [
+      "Tom Saliencro",
+      "Rohan Desai",
+      "Priya Nair",
+      "Maya Lindqvist",
+      "Daniel Whitmore"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+    "summary": "Enhancing classification performance in mammography remains a persistent challenge across both small curated datasets and large-scale clinical cohorts. Conventional transfer learning approaches often neglect dataset-specific characteristics, while recent neighborhood-informed methods have been restricted to narrow tasks with rigid formulations, limiting their scalability to population-level datasets. To address these challenges, we propose the Dataset-Informed Transfer Learning (DITL) framework,",
+    "authors": [
+      "Adarsh Bhandary Panambur",
+      "Siming Bayer",
+      "Andreas Maier"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+    "summary": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with optional symptom descriptions, to a server-hosted vision-language model for zero-shot disease classification. The system separates agent interaction from workflow orchestration: OpenClaw provides scheduling, tool access, user interaction, and notification services on the edge device, while LangGraph man",
+    "authors": [
+      "Syed Mhamudul Hasan",
+      "Anas AlSobeh",
+      "Hussein Zangoti",
+      "Abdur R. Shahid"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+    "summary": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond rewards. Leveraging additional information during training to learn better representations and behaviors has been the focus of asymmetric reinforcement learning. This learning paradigm has proven effective under partial observability when additional state information is available, but also under full observability when more refined state information is available",
+    "authors": [
+      "Gaspard Lambrechts",
+      "Adrien Bolland",
+      "Daniel Ebi",
+      "Damien Ernst"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
+    "summary": "Generation in video diffusion or flow models is computationally expensive due to the slow and iterative sampling process. Current state-of-the-art (SOTA) acceleration methods heavily rely on variational score distillation (VSD) and adversarial losses to distill diffusion models into few-step generators. Albeit achieving high-quality video generation, these training losses are notoriously hard to optimize and suffer from mode collapse, leading to loss of video diversity and lack of motion. In thi",
+    "authors": [
+      "Neta Shaul",
+      "Chao Liu",
+      "Arash Vahdat",
+      "Julius Berner"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Sharpness-Aware Minimization and Muon: Robustness under the Spectral Norm",
+    "summary": "Sharpness-Aware Minimization (SAM) aims to improve generalization by encouraging insensitivity to small, worst-case parameter perturbations. However, the notion of a \"small\" perturbation is inherently geometry-dependent: while existing SAM variants have explored a wide range of choices, a clear perspective on which geometries are most effective in practice remains elusive. Recent work on matrix-aware optimization, particularly the Muon optimizer, suggests that respecting the matrix structure of",
+    "authors": [
+      "Wenzhi Zhong",
+      "Edward Milsom",
+      "Michael Murray"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Empirical Evaluation of Out-Of-Distribution Performance of Tabular Foundation Models",
+    "summary": "Tabular Foundation Models (TFMs) have emerged as novel approaches for tabular predictive tasks, demonstrating competitive predictive performance to ensemble tree-based models. Most TFMs are trained and evaluated on independent and identically distributed data, but this assumption changes in real-world scenarios due to distribution shifts, which compromise the robustness of models. Limited research has been conducted of TFMs under distribution shifts. We present an empirical evaluation of Out-Of-",
+    "authors": [
+      "Malena Loza",
+      "David Chushig-Muzo",
+      "Eva Milara",
+      "Luis Bote-Curiel",
+      "Luis Estrada-Petrocelli",
+      "Felipe Grijalva"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Untangling Co-Drift: Proactive Multi-Intent Failure Prediction and Root-Cause Disambiguation for Self-Driving Networks",
+    "summary": "The vision of self-driving networks that monitor, reason, and act upon themselves with minimal human intervention relies on tightly coupled monitoring, analytics, and actuation functions. In this work, we treat these functions as three operational macro-intents: continuous telemetry, real-time analytics, and programmatic actuation, and formalize the health of each function as an intent that the network must continuously satisfy. A critical, yet underexplored, challenge stems from the causal coup",
+    "authors": [
+      "Md. Kamrul Hossain",
+      "Walid Aljoby"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Generator-Aligned Representation Interfaces for Diagnostic Soft Equivariance",
+    "summary": "Exact-equivariant architectures typically encode prescribed group actions in specialized operators, which can complicate their reuse with generic backbones and across data modalities. We introduce the Generator-Aligned Representation Interface (GARI), a representation-level design principle that exposes selected transformation generators to a generic sequence backbone through aligned canonical and generator-induced views. We formalize the resulting behavior using a probe-specific soft-equivarian",
+    "authors": [
+      "Weitao Li",
+      "Gong Cheng"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Physics-Aware End-to-End Deep Reinforcement Learning for Quadcopter Control with Actuator Dynamics",
+    "summary": "Unmanned aerial vehicles (UAVs), particularly quadcopters, present unique challenges for autonomous control due to their underactuated dynamics: only four available control inputs must govern six degrees of freedom. This paper investigates a physics-aware, end-to-end deep reinforcement learning (DRL) approach that acts directly on low-level body inputs, total thrust and body torques $(T, \u03c4_x, \u03c4_y, \u03c4_z)$, and closes the loop through a high-fidelity Simulink environment. Our simulator integrates a",
+    "authors": [
+      "Ya-Chia Shen",
+      "Woei-Leong Chan"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Schr\u00f6dinger's Cat: Probabilistic Representation and Prediction of Potential Scene Kinematics",
+    "summary": "Predicting how a scene may evolve from partial observations requires reasoning about multiple possible futures rather than committing to a single trajectory. Existing approaches either generate appearance-dominated video predictions or sample a small number of trajectories without explicitly modeling the distribution of possible motion. We introduce Goal-Aware Representations of Future kInEmatic Latent Distributions (GARFIELD), a probabilistic model of scene kinematics that learns a structured s",
+    "authors": [
+      "Timy Phan",
+      "Jannik Wiese",
+      "Bj\u00f6rn Ommer"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Reinforcement Learning for Code Optimization",
+    "summary": "RL for code correctness is now established: have the model generate a program, run it against hidden test cases, and reward solutions that pass. Extending this to code optimization seems straightforward: just add execution time to the reward. But in practice, once timing drives the reward, small problems in measurement noise, reward sparsity, or GRPO instability overwhelm the signal and make RL fail: generated solutions are barely faster, and more of them can fail. We make execution time learnab",
+    "authors": [
+      "Pierre Chambon",
+      "Kunhao Zheng",
+      "Juliette Decugis",
+      "Benoit Sagot",
+      "Gabriel Synnaeve"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Quasi-SVD: Learning a Lie-constrained matrix factorisation for real-time imaging",
+    "summary": "Singular Value Decomposition (SVD) underlies matrix factorisation tasks across computational imaging, with medical applications increasingly demanding real-time processing. Yet SVD algorithms are inherently sequential, constraining real-time GPU throughput and limit online deployment in clinical pipelines. This study introduces Quasi-SVD, a differentiable, fully parallelized matrix factorization framework for GPUs. Rather than enforcing orthogonality on both factors, it guarantees exact orthogon",
+    "authors": [
+      "Christopher Hahne"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+    "summary": "Any-to-any models predict any modality from any combination of others within a single network, a formulation used in multimodal vision and vision-language models, and increasingly in scientific domains such as ecology and astronomy. Existing any-to-any models are typically trained from scratch using encoder-decoder or diffusion architectures, impacting their performance and preventing them from using strong pre-trained decoder-only models as a prior. In this work, we investigate decoder-only any",
+    "authors": [
+      "Mingqiao Ye",
+      "Zhaochong An",
+      "Zhitong Gao",
+      "Xian Liu",
+      "Fran\u00e7ois Fleuret",
+      "Chuan Li",
+      "Amir Zadeh",
+      "Serge Belongie",
+      "Afshin Dehghan",
+      "Jesse Allardice",
+      "David Mizrahi",
+      "O\u011fuzhan Fatih Kar",
+      "Roman Bachmann",
+      "Amir Zamir"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Can Deep Generative Models Reproduce Non-Stationary Gaussian Random Fields?",
+    "summary": "Deep generative models (DGMs) are widely used for complex high-dimensional data and increasingly applied to spatial and spatio-temporal modeling. Their generated samples implicitly represent the learned data distribution and associated uncertainty. However, for real-world data, assessing whether DGMs have learned the underlying process is difficult because the ground truth is unknown and evaluation often relies on observations alone. We evaluate representative DGMs, flow matching (FM), DDPM, sco",
+    "authors": [
+      "Daniel Kua",
+      "Yan Song"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Minimizing Targeted Activations: Input-Only Suppression of Evaluation-Awareness Latents in Large Language Models",
+    "summary": "Activation steering controls model behavior by editing internal activations at inference time. We study its input-side dual: optimizing a fluent prompt so that a chosen internal latent is driven toward zero, with no inference-time model access. Our target is an \"evaluation-awareness\" latent-linearly readable and steerable in recent work-whose control would threaten the validity of safety evaluations if models behave differently when they detect being tested. Adapting Fluent Dreaming / EPO with a",
+    "authors": [
+      "Deepanshu Mody",
+      "Samarth Agarwal",
+      "Utkarsh Mittal",
+      "Dipesh Mahato"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI Data Alone",
+    "summary": "Learning deployable manipulation policies is bottlenecked by the scarcity of data that is both high-fidelity and scalable. Real-robot teleoperation is accurate but costly to scale; robot-free UMI capture scales readily, and current practice uses the resulting data mainly for pre-training, adding a small real-robot \"anchor\" at post-training. We ask whether raising the fidelity of robot-free UMI data, rather than shrinking the real-robot fraction, can remove that anchor. We present HiFi-UMI, a por",
+    "authors": [
+      "Simple AI",
+      " :",
+      "Yuteng Wei",
+      "Jinming Ma",
+      "Jiawei Wang",
+      "Weitao Zhou",
+      "Yushen Zuo",
+      "Ke Rui",
+      "Minglei Li",
+      "Jinhao Zhang",
+      "Zhikang Pan",
+      "Xiang Wang",
+      "Haoran Jia",
+      "Huan Du",
+      "Zicheng Zeng",
+      "Jun Ma",
+      "Guiyu Qin",
+      "Di Zhang",
+      "Xiaofei Li"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "A Machine-Learning-Based Gas Lift Optimization Workflow for Unconventional Fields",
+    "summary": "In this paper, we present an automated data-driven workflow using Machine Learning (ML) for gas lift optimization in unconventional fields. This workflow integrates a ML model that accurately forecasts the Gas Lift Performance Curve, and a Bayesian Optimization Framework to solve for the optimal gas injection rates under the constraints of facility capacity. The ML model leverages the historical production time series data without requiring downhole gauges or multi-rate well tests. We piloted th",
+    "authors": [
+      " Sha",
+      " Miao",
+      "Alexandra Vendetti",
+      "Logan Smart",
+      "Gunta Chomchalerm",
+      "Yang Chen",
+      "Christopher Frazier",
+      "Dustin Haralson",
+      "Jeremy Sorenson",
+      "Xiao Ma",
+      "Huafei Sun",
+      "Aaron Shinn",
+      "Haining Zheng",
+      "Xiao-Hui Wu",
+      "Peng Xu"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "A2TTA: Anchored-and-Agile Test-Time Adaptation for Evolving Traffic Sensor Networks",
+    "summary": "Traffic forecasting is important for efficient traffic management and route planning in smart cities. Existing traffic forecasting studies typically assume fixed sensor graphs, overlooking the continuous evolution of real-world traffic networks, e.g., ongoing road network construction and evolving human mobility patterns. These dynamic changes can substantially degrade conventional forecasting models, motivating test-time adaptation (TTA) to efficiently adapt pretrained models during deployment.",
+    "authors": [
+      "Du Yin",
+      "Xiachong Lin",
+      "Yue Tan",
+      "Jinliang Deng",
+      "Estrid He",
+      "Hao Xue",
+      "Flora D. Salim"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "VAD to the Bone: Ultra-Tiny Speech Activity Detection for Edge Deployment",
+    "summary": "Voice activity detection (VAD) triggers downstream speech processing in always-on systems under strict memory, latency, and compute constraints. Recent compact models report strong accuracy but rely on components that are not widely supported: learnable filterbanks, recurrent layers, or non-causal post-processing. We propose kiloVAD, designed for embedded inference using standard Mel features, CNN-only layers, and tunable context/spectral parameters. We introduce per-layer structured pruning wit",
+    "authors": [
+      "Stephen Bauer",
+      "Sheila Seidel",
+      "Shanza Iftikhar",
+      "Scott Veidenheimer",
+      "Gorkem Ulkar"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "DRIFT: Direct-Recursive Intervention-Conditioned Forecasting of ICU Physiological Trajectories",
+    "summary": "Many time-series forecasts depend not only on prior observations but also on actions specified during the forecast period. In intensive care units (ICUs), future vital signs and laboratory values are influenced by treatments such as vasopressors. However, models that predict the full future sequence all at once make little use of these treatments, whereas autoregressive models can accumulate errors. We introduce DRIFT, a hybrid framework in which a direct model produces the primary forecast and",
+    "authors": [
+      "Weixin Liu",
+      "Juming Xiong",
+      "Congning Ni",
+      "Yanfan Zhu",
+      "Xingtao Lin",
+      "Bradley A. Malin",
+      "Zhijun Yin"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Prototype Adaptation for Zero-Shot sEMG Movement Classification",
+    "summary": "Surface electromyography (sEMG) enables the control of prostheses, allowing upper-limb amputees to re-gain some hand function. Most current research focuses on recognizing basic movements for prosthesis control. However, in most daily activities, such as opening a door, combined movements are essential. However, collecting training data for all possible combined movements is time-consuming and requires re-training of the model for any new combination. We propose two novel recognition approaches,",
+    "authors": [
+      "Rui Liu",
+      "Benjamin Paassen"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "SpectONet: A Physics-Guided Spectral Deep Operator Network for Euler-Bernoulli Beam Dynamics",
+    "summary": "This paper proposes a novel physics-guided spectral deep operator network, termed SpectONet, for solving Euler-Bernoulli beam (EBB) vibration problems. The proposed framework integrates the operator-learning capability of DeepONet with physics-informed constraints and Chebyshev-Gauss-Lobatto (CGL) sensor placement. Unlike conventional DeepONet frameworks, which commonly employ uniformly distributed sensors, SpectONet uses nonuniform spectral sensor locations with a higher concentration of points",
+    "authors": [
+      "Shivani Saini",
+      "Ramesh Kumar Vats",
+      "Arup Kumar Sahoo"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Variance-Reduced Conditional Gradient Methods under Markovian Sampling for Nonconvex Composite Optimization",
+    "summary": "We study stochastic composite nonconvex optimization over a compact convex set when gradient samples arrive along a single trajectory of a fixed ergodic Markov chain. Existing single-trajectory variance-reduction theory covers smooth unconstrained objectives; we address the projection-free composite setting using the generalized Frank-Wolfe gap. We propose MC-ALFCG, which combines a momentum conditional-gradient method with coupled capped multilevel Monte Carlo estimation and per-iteration clipp",
+    "authors": [
+      "Zhaojun Peng"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "WALoMA: A Multitask Wireless Foundation Model via Adaptive Low-Rank Masked Autoencoders",
+    "summary": "This paper proposes a multitask wireless foundation model via adaptive low-rank masked autoencoders (WALoMA), a unified multi-task foundation model for sixth-generation (6G) wireless physical layer architectures, to address the limitations of specialized, task-specific deep learning models and the practical challenge of scarce labeled wireless datasets. By leveraging concepts inspired by foundation models, the proposed framework adopts a masked autoencoder (MAE) paradigm to learn from unlabeled",
+    "authors": [
+      "Madi Makin",
+      "Asmaa Abdallah",
+      "Abdulkadir Celik",
+      "Ahmed M. Eltawil"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "An Embarrassingly Simple Rule-based Visiting Circulation Approach to Trip Destination Prediction",
+    "summary": "In this paper, we propose the Rule-based Visiting Circulation (RVC) model in tackling the challenge in the IEEE Big Data Cup 2022: Trip Destination Prediction. Given trips containing travel information, personal attributes, origin zones, and their features in the training metropolitan areas, the task is to predict the destination of every trip in a targeted metropolitan area whose destinations are not given at all at the training stage. We highlight the challenges in this destination prediction",
+    "authors": [
+      "Eng-Shen Tu",
+      "Yong-Han Chen",
+      "En-Chao Liu",
+      "Hao-Yun Keng",
+      "Cheng-Te Li"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Detecting CSAM Text-to-Image LoRAs From Weights",
+    "summary": "Low-rank adaptation (LoRA) fine-tuning has made it cheap and easy to customize open-weight image generation models for specific tasks, including the production of child sexual abuse material (CSAM). Existing moderation relies on metadata or generated outputs, but metadata can be deceptive and generating outputs may itself be unacceptable or illegal. We show that a safer signal lives in the weights. The top-left singular vectors of a LoRA's updates form a compact, inference-free fingerprint ($u_1",
+    "authors": [
+      "David Demitri Africa",
+      "Cate Heine",
+      "Nadine Staes-Polet",
+      "Kimberly Mai"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Shared Voxel-Map-Based Cooperative Indoor UAV Guidance with a Multi-Agent Soft Actor-Critic Controller",
+    "summary": "This paper presents a cooperative indoor UAV guidance framework that combines a shared voxel-map world model with a multi-agent Soft Actor-Critic (MASAC) controller. Multiple drones fuse 360 LiDAR observations into a common world-frame occupancy map, which is converted into a compact bird's-eye-view (BEV) representation and provided to each agent as an ego-aligned local crop. This integrate-in-world, act-in- ego design enables consistent multi-UAV spatial fusion whilst retaining decentralised co",
+    "authors": [
+      "Thomas Hickling",
+      "Dylan Wynne",
+      "Yu Su",
+      "Nabil Aouf"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Optimization with Dynamic Constraint Learning (DCL)",
+    "summary": "We propose Dynamic Constraint Learning (DCL), a data-driven framework for constrained optimization when constraint functions are unknown and cannot be queried during optimization. At each iteration, the method learns a local surrogate from nearby data and solves a subproblem within a data-supported trust region. Compared with offline global constraint learning, the approach uses local surrogates that adapt to the data distribution during optimization and can achieve solution quality comparable t",
+    "authors": [
+      "Ezgi Oztekin",
+      "Figen Oztoprak",
+      "S. Ilker Birbil"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Tools Are Not Islands: Set-Level Tool Retrieval for LLM Agents via Query-Conditioned Hyperedge Prediction",
+    "summary": "Large language model (LLM) agents increasingly rely on invoking external tools to complete real-world tasks. Tool retrieval, which selects a small task-relevant subset from a library of thousands of tools before the agent acts, has therefore become a critical component of LLM agent pipelines. However, existing retrievers either score each tool in isolation or assemble the tool set sequentially, so the joint utility of a candidate set is never evaluated as a whole. In this paper, we propose HYSET",
+    "authors": [
+      "Xinyi Hong",
+      "Pinjun Dong",
+      "Xinyang Yu",
+      "Binyan Jiang"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "From Deterministic to Generative Deep Learning for Urban Air Quality Reconstruction from Sparse Observations",
+    "summary": "Full-field reconstruction of air pollution is essential for evaluating pollution exposure and supporting public health decision-making. However, the complex interactions among pollutants, hard-to-predict weather patterns, and limited monitoring station coverage make this a complex task. We apply deep learning techniques to provide fast and accurate reconstructions from sparse observations of four key pollutants: NO2, O3, PM2.5 and PM10. Models are trained on full-field simulation data and evalua",
+    "authors": [
+      "Abhishek A. Sabnis",
+      "Mihai Mitrea",
+      "Lya Lugon",
+      "Karine Sartelet",
+      "Marc Bocquet",
+      "Xiaoyuan Cheng",
+      "Shupeng Zhu",
+      "Sibo Cheng"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Rashomon Alignment",
+    "summary": "We propose Rashomon Alignment (RA), a new measure to assess functional similarity between two models. Existing functional similarity measures are distributional, quantifying differences between outputs of models applied to real-world data. However, these measures can be regarded as ecologically valid only for regions in the input space represented by the available data. We introduce a geometrical perspective on functional model similarity, which estimates it across the entire data space, offerin",
+    "authors": [
+      "Mois\u00e9s Santos",
+      "Peter van der Putten",
+      "Bernhard Pfahringer",
+      "Carlos Soares"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "DynaBridge: Dynamic Summary-Guided Cross-Task Multimodal Fusion for DASS-Structured Mental Health Assessment",
+    "summary": "Multimodal behavioral analysis offers a scalable approach to assessing depression, anxiety, and stress, yet generic fusion models often ignore the psychometric structure of questionnaire labels. In DASS-21, risk labels are derived from ordered symptom items through fixed item-to-subscale mappings. We propose \\textbf{DynaBridge}, a dynamic summary-guided cross-task multimodal framework for DASS-structured mental health assessment. DynaBridge encodes acoustic, visual, and textual cues across multi",
+    "authors": [
+      "Shiyu Teng",
+      "Haichen Yu",
+      "Jiaqing Liu",
+      "Hao Sun",
+      "Yu Song",
+      "Shurong Chai",
+      "Ruibo Hou",
+      "Lanfen Lin",
+      "Yen-Wei Chen"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "A Physics-Informed Neural Operator for Thermal Ranking of Low-Cost Wall Materials in Hot-Dry Climates",
+    "summary": "Identifying cost-effective indigenous building materials that minimise heat penetration through walls is critical for indoor thermal comfort in low-income rural housing in hot-dry climates, where summer temperatures routinely exceed 45 C. We present a two-stage computational framework for thermal ranking of five low-cost indigenous wall materials: mud brick, clay-straw adobe, lime-stabilised bamboo panel, fired clay brick, and lime-mud composite. First, a validated Crank-Nicolson finite differen",
+    "authors": [
+      "Muhammad Akbar Khan",
+      "Fahim Raees",
+      "Ubaida Fatima"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Contextual Deconvolution for Variance-Stable Demand Sensing: Kernel-Modulated Operators in Promotional Retail",
+    "summary": "Machine learning demand forecasts optimize statistical accuracy yet leave excess operational volatility that inflates safety stock and amplifies the Bullwhip effect. We introduce \\textbf{Contextual Deconvolution} (CD), a two-stage estimator that reframes demand sensing as a convex decomposition: a kernel-modulated banded operator separates transient promotion-driven shocks from a smooth structural baseline, and hierarchical partial pooling enables catalog-scale deployment without per-SKU trainin",
+    "authors": [
+      "Mohammad Forouhesh"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Using Data-Derived Priors to Guide CNN Architecture Design for NIR Chemometrics",
+    "summary": "Convolutional neural networks (CNN) for near-infrared (NIR) chemometrics are often designed using generic architectural rules, although spectral datasets differ in sampling, smoothness, redundancy, and sample size. We tested whether these properties can provide empirical priors for CNN design. Across 25 NIR regression tasks, we computed descriptors of dataset size, spectral length and spacing, entropy, intrinsic rank, autocorrelation, and wavelet-scale structure. Two interpretable 1D-CNN scaffol",
+    "authors": [
+      "D\u00e1rio Passos"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "MemSFT: Mitigating Alignment Tax with an External Parametric Memory",
+    "summary": "Adapting Large Language Models (LLMs) to specialized domains often incurs an alignment tax, as fine-tuning on domain-specific tasks can cause catastrophic forgetting and substantially degrade performance on general tasks. We propose MemSFT, which mitigates the alignment tax by decoupling domain specialization from backbone parameter updates through a plug-and-play parametric memory. The memory is trained to imitate the behavior of a non-parametric retriever operating over domain data, thereby me",
+    "authors": [
+      "Jiarui Wang",
+      "Xiang Shi",
+      "Jiaqi Cao",
+      "Rubin Wei",
+      "Xiquan Wang",
+      "Hao Sun",
+      "Jingzhi Wang",
+      "Zhiqi Yang",
+      "Qipeng Guo",
+      "Bowen Zhou",
+      "Zhouhan Lin"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Contrastive Representation Learning of Longitudinal Disease Trajectories on Temporal Graphs",
+    "summary": "Understanding disease trajectories from longitudinal clinical data remains challenging due to complex temporal dynamics and heterogeneous patient cohorts. Here, we present a contrastive representation learning framework that models multivariate disease trajectories as temporal graphs and learns representations using contrastive graph neural networks. Nodes represent patient observations over time, while edges capture temporal continuity and structural similarity between trajectories. Structure-a",
+    "authors": [
+      "Bastian Pfeifer"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Physics-Informed Broad Learning System: An Efficient Backpropagation-Free Framework for Solving Partial Differential Equations",
+    "summary": "Physics-informed neural networks (PINNs) have emerged as a powerful paradigm for solving partial differential equations (PDEs) by embedding governing physical laws into deep neural networks. However, their reliance on computationally expensive gradient-based optimization and deep architectures often results in slow training, high computational cost, and limited scalability. In this work, we propose a novel physics-informed broad learning system (PI-BLS), the first physics-informed learning frame",
+    "authors": [
+      "Pinki Khatun",
+      "M. Sajid",
+      "Abhinav Jha",
+      "M. Tanveer"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "OrthKD: Extracting Generalized Clinical Knowledge from Heterogeneous Teachers for Lightweight Deployment",
+    "summary": "Deploying diabetic retinopathy (DR) screening models in primary care requires edge-efficient systems that remain accurate, safe, and reliable under domain shift. Multi-teacher knowledge distillation (KD) is a natural compression strategy, but existing approaches largely assume that all teachers provide equally trustworthy supervision. In our setting, this assumption fails: a strong CNN teacher (EfficientNet-B3, 0.876 QWK) and a weaker Transformer teacher (Swin-Base, 0.830 QWK) are complementary,",
+    "authors": [
+      "Yi Xu",
+      "Cheng Chen",
+      "Mufan Cao"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Mind the Missing Split: Resolving Feature Heterogeneity in Swarm Learning with Random Forests",
+    "summary": "Swarm Learning is a decentralized collaborative learning mechanism that allows multiple organizations to train a shared model without central coordination or direct data sharing. In typical horizontal Swarm Learning, datasets across sites are usually assumed to share the same feature set. However, in real-world applications, sites often have partially overlapping features because measurements, protocols, and available covariates differ across sites. This feature heterogeneity creates a practical",
+    "authors": [
+      "Mohammad Tajabadi",
+      "Dominik Heider"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Multi-Scale Structural Features for Continual, Comprehensible Visual Recognition in a Developmental Learning Framework",
+    "summary": "Contemporary machine learning struggles to learn continually, reuse prior knowledge, and expose a comprehensible internal structure. A recently proposed developmental, gradient-free learning framework addresses these limitations by learning a discrete, topological model of its inputs through local variation and selection, yielding an inherent continual-learning guarantee: new observations refine existing structure without overwriting past knowledge, and without replay buffers or predefined task",
+    "authors": [
+      "Zeki Doruk Erden"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "AMPBench-MT: A Homology-Controlled Benchmark for Antimicrobial Peptide Potency, Spectrum, and Safety Prediction",
+    "summary": "Computational AMP discovery is often evaluated through AMP/non-AMP recognition, yet follow-up decisions depend on assay-derived evidence such as target-species potency, hemolysis, toxicity, and selectivity. Existing AMP and peptide benchmarks cover binary recognition, multilabel annotation, assay regression, or broader peptide-model comparison, but they do not jointly place AMP recognition, species-conditioned potency, spectrum, safety-facing proxy endpoints, and cross-endpoint behavior within o",
+    "authors": [
+      "Ziheng Zhou",
+      "Huiyu Luo",
+      "Xiaohu Zhu",
+      "Nan Wang",
+      "Xuebiao Qin",
+      "Chaoyan Zhang",
+      "Jun Yan"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Anti-Backdoor Coreset Selection via Cumulative Entropy",
+    "summary": "Recent training-time defenses against neural backdoors isolate a benign subset from poisoned training data, to learn a backdoor-free model from it. In this paper, we formulate this defense strategy as a coreset selection problem, giving rise to so-called \"Anti-Backdoor Coreset Selection.\" Since poisonous samples have (a) lower prediction uncertainty and are (b) less frequent than benign samples, coreset selection naturally focuses more on samples associated with benign functionality than the bac",
+    "authors": [
+      "Qi Zhao",
+      "Christian Wressnegger"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Quantum Speedups for Stochastic Optimization with Heavy-Tailed Noise",
+    "summary": "We study stochastic optimization with heavy-tailed gradient noise. We first propose a novel quantum mean estimator for multivariate heavy-tailed random variables that achieves lower query complexity than optimal classical estimators in the low-dimensional regime. We further develop an unbiased quantum mean estimator by applying a generalized multi-level Monte Carlo technique. We prove quantum lower bounds showing that, when the dimension $d$ of the random vector is small and can be viewed as a c",
+    "authors": [
+      "Bin Luo",
+      "Chengchang Liu",
+      "Jonathan Allcock",
+      "Shengyu Zhang",
+      "John C. S. Lui"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Data-Dependent Regret and Polyak Corrections for Constrained Online Convex Optimization",
+    "summary": "Constrained online convex optimization requires minimizing regret against adversarial convex costs while satisfying a convex constraint at every round, as needed in safety-critical applications. A computationally efficient method combines online gradient descent with a Polyak feasibility step, using one constraint evaluation and one subgradient per round. Although this method achieves O(sqrt(T)) regret with per-round feasibility, we derive a tighter, data-dependent analysis by retaining two quan",
+    "authors": [
+      "Wentao Zhang"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Architectural Backdoors in Vision-Language Model Supply Chains via Representation Steering",
+    "summary": "Vision--Language Models (VLMs) are increasingly deployed through a model supply chain in which pretrained checkpoints, architecture definitions, text encoders, and exported computation graphs are distributed by third parties and reused across downstream services. This reuse model creates a security-critical trust boundary: VLM deployments inherit not only learned parameters but also executable behavior encoded in shared model artifacts. In this paper, we show that a malicious provider can exploi",
+    "authors": [
+      "Maria Rosaria Briglia",
+      "Igor Maljkovic",
+      "Antonio Emanuele Cin\u00e0",
+      "Luca Oneto",
+      "Iacopo Masi",
+      "Fabio Roli"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Emergent Latent-State Computation under Stochastic Volatility",
+    "summary": "Mechanistic interpretability has largely focused on language models and deterministic toy tasks. Much less is known about how sequence models internally represent latent stochastic dynamics under noisy, partially observed observations. We study this question in a controlled multivariate stochastic volatility setting, where models observe only returns while the ground-truth latent volatility state is known to the researcher. This setting provides a useful benchmark for mechanistic interpretabilit",
+    "authors": [
+      "Xiaoyu Huang",
+      "Lulu Wang"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  },
+  {
+    "title": "Bits and Memories: Measuring Verbatim Extraction Across LLM Quantization",
+    "summary": "Language models are almost always quantized before they are deployed, and a growing line of work asks whether quantization also lowers their privacy risk. That work measures privacy almost entirely with membership inference. We think this is the wrong thing to measure for the risk that most people actually worry about, namely a model reproducing its training data word for word, and we measure that directly. Using the Pythia models and the public set of sequences each of them is known to have mem",
+    "authors": [
+      "Akshay Sasi"
+    ],
+    "source": "arxiv",
+    "category": "cs.LG"
+  }
+]

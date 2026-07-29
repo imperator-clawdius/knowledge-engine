@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Engine — Free Learning Paths</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
+  .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+  h1 { font-size: 2.5rem; margin-bottom: 8px; background: linear-gradient(135deg, #6c5ce7, #a29bfe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .tagline { color: #888; font-size: 1.1rem; margin-bottom: 40px; }
+  .search-box { display: flex; gap: 12px; margin-bottom: 32px; }
+  .search-box input { flex: 1; padding: 16px 20px; border-radius: 12px; border: 1px solid #2a2a3a; background: #14141f; color: #e0e0e0; font-size: 1rem; }
+  .search-box input:focus { outline: none; border-color: #6c5ce7; }
+  .search-box button { padding: 16px 28px; border-radius: 12px; border: none; background: #6c5ce7; color: white; font-size: 1rem; cursor: pointer; font-weight: 600; }
+  .search-box button:hover { background: #5a4bd1; }
+  .examples { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; }
+  .example { padding: 8px 16px; border-radius: 20px; background: #14141f; border: 1px solid #2a2a3a; color: #a29bfe; cursor: pointer; font-size: 0.9rem; }
+  .example:hover { border-color: #6c5ce7; }
+  .result { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+  .result h3 { color: #a29bfe; margin-bottom: 8px; }
+  .result p { color: #aaa; font-size: 0.95rem; line-height: 1.5; }
+  .result .meta { color: #666; font-size: 0.8rem; margin-top: 8px; }
+  footer { text-align: center; color: #444; font-size: 0.85rem; margin-top: 60px; padding: 20px; }
+  footer a { color: #6c5ce7; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Knowledge Engine</h1>
+  <p class="tagline">Tell me what you want to learn. I'll show you the free path.</p>
+  
+  <div class="search-box">
+    <input type="text" id="query" placeholder="e.g. I'm 16 and want to learn robotics with no money..." autofocus>
+    <button onclick="search()">→</button>
+  </div>
+
+  <div class="examples">
+    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Learn robotics at 16 with no money</span>
+    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Become a data scientist from scratch</span>
+    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Free resources for web development</span>
+    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Scholarships for first-gen college students</span>
+    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Learn AI/ML without a degree</span>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<footer>
+  Built by <a href="https://github.com/imperator-clawdius/knowledge-engine">Cerberus</a> · Powered by open knowledge · 100% free, forever
+</footer>
+
+<script>
+async function search() {
+  const query = document.getElementById('query').value.trim();
+  if (!query) return;
+  document.getElementById('results').innerHTML = '<p style="color:#666">Searching open resources…</p>';
+  
+  // For now: placeholder. When backend is live, this calls the API.
+  // The real engine uses MemPalace semantic search + LLM-generated paths.
+  const results = [
+    { title: "🚀 Getting Started", body: "Your learning path for \"" + query + "\" is being built. The Knowledge Engine searches arXiv, OpenStax, MIT OCW, Khan Academy, and freeCodeCamp for the best free resources.", source: "Coming soon" },
+    { title: "📚 How it works", body: "1. We crawl open educational resources 24/7. 2. MemPalace indexes them into searchable knowledge. 3. An AI generates your personalized learning path with prerequisites, timelines, and scholarship links.", source: "Cerberus" },
+    { title: "💰 100% Free", body: "Everything we index is already free. We just connect the dots. No ads. No sign-ups. No paywalls. Just knowledge.", source: "MIT Licensed" }
+  ];
+  
+  let html = '';
+  for (const r of results) {
+    html += `<div class="result"><h3>${r.title}</h3><p>${r.body}</p><div class="meta">Source: ${r.source}</div></div>`;
+  }
+  document.getElementById('results').innerHTML = html;
+}
+
+document.getElementById('query').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') search();
+});
+</script>
+</body>
+</html>
