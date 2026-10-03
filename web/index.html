@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Knowledge Engine — Free Learning Paths</title>
+<title>Knowledge Engine — Free Resource Search</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; min-height: 100vh; }
@@ -19,62 +19,48 @@
   .example { padding: 8px 16px; border-radius: 20px; background: #14141f; border: 1px solid #2a2a3a; color: #a29bfe; cursor: pointer; font-size: 0.9rem; }
   .example:hover { border-color: #6c5ce7; }
   .result { background: #14141f; border: 1px solid #2a2a3a; border-radius: 12px; padding: 20px; margin-bottom: 12px; }
-  .result h3 { color: #a29bfe; margin-bottom: 8px; }
+  .result h2 { color: #a29bfe; margin-bottom: 8px; font-size: 1.2rem; }
   .result p { color: #aaa; font-size: 0.95rem; line-height: 1.5; }
   .result .meta { color: #666; font-size: 0.8rem; margin-top: 8px; }
   footer { text-align: center; color: #444; font-size: 0.85rem; margin-top: 60px; padding: 20px; }
   footer a { color: #6c5ce7; }
+  .scope, #status { color: #aaa; line-height: 1.5; margin-bottom: 20px; }
+  .tagline { margin-bottom: 16px; }
+  .search-box input { min-width: 0; }
+  .result a { display: inline-block; color: #a29bfe; margin-top: 12px; }
+  .result { overflow-wrap: anywhere; }
+  #retry { padding: 10px 16px; margin-bottom: 20px; cursor: pointer; }
+  @media (max-width: 480px) { .container { padding-top: 32px; } .search-box button { padding: 16px; } }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>Knowledge Engine</h1>
-  <p class="tagline">Tell me what you want to learn. I'll show you the free path.</p>
+  <p class="tagline">Search free research resources from a saved arXiv snapshot.</p>
+  <p class="scope">July 29, 2026 snapshot · AI, machine learning, robotics, and quantitative biology. Resource search only; personalized learning paths are not implemented.</p>
   
-  <div class="search-box">
-    <input type="text" id="query" placeholder="e.g. I'm 16 and want to learn robotics with no money..." autofocus>
-    <button onclick="search()">→</button>
+  <form class="search-box" id="search-form">
+    <input type="search" id="query" aria-label="Search saved resources" placeholder="e.g. robotics or machine learning" maxlength="300" autofocus>
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="examples" aria-label="Example searches">
+    <button class="example" type="button">robotics</button>
+    <button class="example" type="button">machine learning</button>
+    <button class="example" type="button">synchronization</button>
+    <button class="example" type="button">cs.RO</button>
   </div>
 
-  <div class="examples">
-    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Learn robotics at 16 with no money</span>
-    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Become a data scientist from scratch</span>
-    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Free resources for web development</span>
-    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Scholarships for first-gen college students</span>
-    <span class="example" onclick="document.getElementById('query').value=this.textContent;search()">Learn AI/ML without a degree</span>
-  </div>
-
-  <div id="results"></div>
+  <p id="status" role="status" aria-live="polite">Enter a topic, author, or category to search the saved resources.</p>
+  <button id="retry" type="button" hidden>Try loading again</button>
+  <div id="results" aria-busy="false"></div>
+  <noscript>JavaScript is required to search the bundled datasets.</noscript>
 </div>
 
 <footer>
-  Built by <a href="https://github.com/imperator-clawdius/knowledge-engine">Cerberus</a> · Powered by open knowledge · 100% free, forever
+  Built by <a href="https://github.com/imperator-clawdius/knowledge-engine">Cerberus</a> · Powered by open knowledge · Free resource search
 </footer>
 
-<script>
-async function search() {
-  const query = document.getElementById('query').value.trim();
-  if (!query) return;
-  document.getElementById('results').innerHTML = '<p style="color:#666">Searching open resources…</p>';
-  
-  // For now: placeholder. When backend is live, this calls the API.
-  // The real engine uses MemPalace semantic search + LLM-generated paths.
-  const results = [
-    { title: "🚀 Getting Started", body: "Your learning path for \"" + query + "\" is being built. The Knowledge Engine searches arXiv, OpenStax, MIT OCW, Khan Academy, and freeCodeCamp for the best free resources.", source: "Coming soon" },
-    { title: "📚 How it works", body: "1. We crawl open educational resources 24/7. 2. MemPalace indexes them into searchable knowledge. 3. An AI generates your personalized learning path with prerequisites, timelines, and scholarship links.", source: "Cerberus" },
-    { title: "💰 100% Free", body: "Everything we index is already free. We just connect the dots. No ads. No sign-ups. No paywalls. Just knowledge.", source: "MIT Licensed" }
-  ];
-  
-  let html = '';
-  for (const r of results) {
-    html += `<div class="result"><h3>${r.title}</h3><p>${r.body}</p><div class="meta">Source: ${r.source}</div></div>`;
-  }
-  document.getElementById('results').innerHTML = html;
-}
-
-document.getElementById('query').addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') search();
-});
-</script>
+<script type="module" src="./app.mjs"></script>
 </body>
 </html>
